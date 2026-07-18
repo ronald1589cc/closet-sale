@@ -1,5 +1,6 @@
 import { productos, categorias, nombresCategoria } from "../productos.js";
 import { agregarAlCarrito, obtenerCarrito } from "../carrito.js";
+import { mostrarToast } from "./toast.js";
 import { attachCardSliders } from "./card-slider.js";
 
 const catalogEl = document.getElementById("catalog");
@@ -77,7 +78,9 @@ export function renderCatalogo() {
 
   catalogEl.querySelectorAll(".add-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
+      const producto = productos.find((p) => p.id === btn.dataset.id);
       agregarAlCarrito(btn.dataset.id);
+      mostrarToast(`${producto.nombre} agregado a la bolsa ✓`, { duracion: 2000 });
     });
   });
 }

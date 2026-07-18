@@ -4,6 +4,7 @@ import {
   eliminarDelCarrito,
   obtenerCarrito,
   totalItems,
+  vaciarCarrito,
 } from "../carrito.js";
 import { productoPorId } from "../productos.js";
 
@@ -87,3 +88,8 @@ export function cerrarCarrito() {
 document.getElementById("cart-toggle").addEventListener("click", abrirCarrito);
 document.getElementById("cart-close").addEventListener("click", cerrarCarrito);
 overlay.addEventListener("click", cerrarCarrito);
+document.getElementById("cart-clear").addEventListener("click", () => {
+  if (obtenerCarrito() && Object.keys(obtenerCarrito()).length > 0) {
+    vaciarCarrito();
+  }
+});
