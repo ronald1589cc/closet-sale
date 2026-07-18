@@ -1,0 +1,45 @@
+export const shorts = [
+  {
+    id: "short-jeans",
+    nombre: "Short Jeans",
+    precio: 17,
+    talla: "32",
+    categoria: "shorts",
+    stock: 1,
+    imagenes: [
+      "/images/products/short/Short-Jeans-a.jpg",
+      "/images/products/short/Short-Jeans-b.jpg",
+      "/images/products/short/Short-Jeans-c.jpg",
+    ],
+  },
+  {
+    id: "short-jeans-1",
+    nombre: "Short Jeans",
+    precio: 20,
+    talla: "30",
+    categoria: "shorts",
+    stock: 1,
+    imagenes: [
+      "/images/products/short/Short-Jeans-1-a.jpg",
+      "/images/products/short/Short-Jeans-1-b.jpg",
+      "/images/products/short/Short-Jeans-1-c.jpg",
+      "/images/products/short/Short-Jeans-1-d.jpg",
+      "/images/products/short/Short-Jeans-1-e.jpg",
+      "/images/products/short/Short-Jeans-1-f.jpg",
+    ],
+  },
+  {
+    id: "short-singular",
+    nombre: "Short Singular",
+    precio: 16,
+    talla: "28:30",
+    categoria: "shorts",
+    stock: 1,
+    imagenes: [
+      "/images/products/short/Short-Singular-a.jpg",
+      "/images/products/short/Short-Singular-b.jpg",
+      "/images/products/short/Short-Singular-c.jpg",
+      "/images/products/short/Short-Singular-d.jpg",
+    ],
+  },
+];

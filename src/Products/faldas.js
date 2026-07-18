@@ -1,0 +1,46 @@
+export const faldas = [
+  {
+    id: "falda-short",
+    nombre: "Falda short",
+    precio: 18,
+    talla: "30",
+    categoria: "faldas",
+    stock: 1,
+    imagenes: [
+      "/images/products/falda/Falda-short-a.jpg",
+      "/images/products/falda/Falda-short-b.jpg",
+      "/images/products/falda/Falda-short-c.jpg",
+      "/images/products/falda/Falda-short-d.jpg",
+      "/images/products/falda/Falda-short-e.jpg",
+    ],
+  },
+  {
+    id: "falda-sybilla",
+    nombre: "Falda sybilla",
+    precio: 18,
+    talla: "M(30)",
+    categoria: "faldas",
+    stock: 1,
+    imagenes: [
+      "/images/products/falda/Falda-sybilla-a.jpg",
+      "/images/products/falda/Falda-sybilla-b.jpg",
+      "/images/products/falda/Falda-sybilla-c.jpg",
+      "/images/products/falda/Falda-sybilla-d.jpg",
+      "/images/products/falda/Falda-sybilla-e.jpg",
+    ],
+  },
+  {
+    id: "falda-hym",
+    nombre: "Falda H&M",
+    precio: 18,
+    talla: "30/32",
+    categoria: "faldas",
+    stock: 1,
+    imagenes: [
+      "/images/products/falda/Falda-H&M-a.jpg",
+      "/images/products/falda/Falda-H&M-b.jpg",
+      "/images/products/falda/Falda-H&M-c.jpg",
+      "/images/products/falda/Falda-H&M-d.jpg",
+    ],
+  },
+];
