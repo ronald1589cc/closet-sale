@@ -17,5 +17,9 @@ export function armarMensajeWhatsapp(entradas, productoPorId, total) {
 
 export function abrirWhatsapp(mensaje) {
   const url = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, "_blank");
+  const nuevaVentana = window.open(url, "_blank");
+
+  if (!nuevaVentana || nuevaVentana.closed) {
+    window.location.href = url;
+  }
 }
